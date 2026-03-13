@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BM INSIGHTS ብእምነት | Learn.Earn</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <img src="profile.png" alt="Logo" class="brand-photo glowing-logo">
+            <div class="logo-text">BM INSIGHTS <span class="tigrinya-text">(ብእምነት)</span></div>
+        </div>
+        
+        <div class="nav-links">
+            <a href="index.html" class="active" data-en="Home" data-ti="ገዛ">Home</a>
+            <a href="courses.html" data-en="Our Courses" data-ti="ትምህርትታትና">Our Courses</a>
+        </div>
+
+        <select id="lang-selector" class="interactive-btn-secondary" onchange="changeLanguage()">
+         <option value="en">🌐 English</option>
+         <option value="ti">🇪🇷 ትግርኛ</option>
+        </select>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-main-wrapper">
+            
+            <div class="hero-image-container">
+                <img src="profile.png" alt="BM Insights Expert" class="large-expert-photo glowing-photo">
+                <div class="photo-glow-effect"></div>
+            </div>
+
+            <div class="hero-text-content">
+                <div class="badge" data-en="⭐ Premium Quality Courses" data-ti="⭐ ብሉጽ ጽሬት ዘለዎ ትምህርትታት">
+                    ⭐ Premium Quality Courses
+                </div>
+                
+                <h1 class="hero-title glowing-text">
+                    <span data-en="Unlock Your Potential with" data-ti="ክእለትኩም ኣዕብዩ ምስ">
+                         Unlock Your Potential with
+                    </span><br>
+                    <span class="highlight" data-en="Expert Knowledge" data-ti="ሞያዊ ፍልጠት">Expert Knowledge</span>
+                </h1>
+                
+                <p class="hero-subtitle" data-en="Professional courses" data-ti="ሞያዊ ትምህርትታት">
+                    Professional courses 
+                </p>
+                
+                <div class="hero-buttons">
+                    <button class="btn-primary-glowing" onclick="window.location.href='courses.html'">
+                        <span data-en="Our Courses" data-ti="ትምህርትታትና">Our Courses</span> →
+                    </button>
+                    <button class="btn-secondary-glowing">
+                        👥 <span data-en="Community" data-ti="ማሕበረሰብ">Community</span>
+                    </button>
+                </div>
+
+                <div class="hero-features">
+                    <span data-en="🎥 On-demand Video" data-ti="🎥 ብድሌት ዝቐርብ ቪድዮ">🎥 On-demand Video</span>
+                    <span data-en="🌐 Bilingual Support" data-ti="🌐 ዝተፈላለየ ቛንቛ ዝጥቀም ደገፍ">🌐 Bilingual Support</span>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="homepage-courses">
+        <h2 class="section-title glowing-text" style="font-size: 35px; margin-bottom: 30px; text-align: left;">
+            <span data-en="Featured Courses" data-ti="ፍሉያት ትምህርትታት">Featured Courses</span>
+        </h2>
+
+        <div class="courses-slider">
+            
+            <div class="premium-course-card">
+                <div class="course-thumbnail bg-gradient-1">
+                    <div class="price-tag">$29</div>
+                    <div class="play-button-wrapper"><div class="play-icon">▶</div></div>
+                </div>
+                <div class="course-info">
+                    <h3 data-en="YouTube Content Creation" data-ti="ናይ ዩቱብ ትሕዝቶ">YouTube Content Creation</h3>
+                    <p data-en="Learn to create and grow a channel." data-ti="ቻነል ምድላውን ምዕባይን ተምሃሩ።">Learn to create and grow a channel.</p>
+                    
+                    <div class="card-actions">
+                        <a href="course-detail.html" class="learn-more-link" data-en="Learn More →" data-ti="ተወሳኺ ኣንብብ →">Learn More →</a>
+                        <button class="btn-primary-glowing small-buy-btn" onclick="window.location.href='course-detail.html'" data-en="Buy Now" data-ti="ሕጂ ግዛእ">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="premium-course-card">
+                <div class="course-thumbnail bg-gradient-2">
+                    <div class="price-tag">$19</div>
+                    <div class="play-button-wrapper"><div class="play-icon">▶</div></div>
+                </div>
+                <div class="course-info">
+                    <h3 data-en="Digital Marketing" data-ti="ዲጂታል ማርኬቲንግ">Digital Marketing</h3>
+                    <p data-en="Master social media marketing." data-ti="ኣብ ማሕበራዊ ሚድያ ዕዳጋ ምግባር።">Master social media marketing.</p>
+                    
+                    <div class="card-actions">
+                        <a href="course-detail.html" class="learn-more-link" data-en="Learn More →" data-ti="ተወሳኺ ኣንብብ →">Learn More →</a>
+                        <button class="btn-primary-glowing small-buy-btn" onclick="window.location.href='course-detail.html'" data-en="Buy Now" data-ti="ሕጂ ግዛእ">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+             <div class="premium-course-card">
+                <div class="course-thumbnail" style="background: linear-gradient(135deg, #1A2980 0%, #26D0CE 100%);">
+                    <div class="price-tag">$35</div>
+                    <div class="play-button-wrapper"><div class="play-icon">▶</div></div>
+                </div>
+                <div class="course-info">
+                    <h3 data-en="English Speaking Fluency" data-ti="ብእንግሊዝኛ ምዝራብ">English Speaking Fluency</h3>
+                    <p data-en="Live speaking practice and feedback." data-ti="ቀጥታ ልምምድ ምዝራብን ርእይቶን።">Live speaking practice and feedback.</p>
+                    
+                    <div class="card-actions">
+                        <a href="course-detail.html" class="learn-more-link" data-en="Learn More →" data-ti="ተወሳኺ ኣንብብ →">Learn More →</a>
+                        <button class="btn-primary-glowing small-buy-btn" onclick="window.location.href='course-detail.html'" data-en="Buy Now" data-ti="ሕጂ ግዛእ">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="floating-whatsapp" onclick="contactSupport()">💬</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
