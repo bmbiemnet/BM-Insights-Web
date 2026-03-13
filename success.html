@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BM INSIGHTS | Course Access</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <img src="profile.png" alt="Logo" class="brand-photo glowing-logo">
+            <div class="logo-text">BM INSIGHTS <span class="tigrinya-text">(ብእምነት)</span></div>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" data-en="Home" data-ti="ገዛ">Home</a>
+            <a href="courses.html" class="active" data-en="Our Courses" data-ti="ትምህርትታትና">Our Courses</a>
+        </div>
+        <select id="lang-selector" class="interactive-btn-secondary" onchange="changeLanguage()">
+            <option value="en">🌐 English</option>
+            <option value="ti">🇪🇷 ትግርኛ</option>
+        </select>
+    </nav>
+
+    <section class="course-detail-container" style="display: block;">
+        
+        <div class="success-header">
+            <h1 class="glowing-text" 
+                data-en="🎉 Payment Successful!" 
+                data-ti="🎉 ክፍሊትካ ተፈጺሙ!">
+                🎉 Payment Successful!
+            </h1>
+            <p data-en="Welcome! You now have full access to YouTube Content Creation Mastery." 
+               data-ti="እንቋዕ ብደሓን መጻእካ! ሕጂ ናብ ናይ ዩቱብ ትሕዝቶ ምድላው ክእለት ምሉእ ኣፍደገ ኣለካ።">
+               Welcome! You now have full access to YouTube Content Creation Mastery.
+            </p>
+        </div>
+
+        <div class="video-wrapper glowing-photo">
+            <iframe 
+                width="100%" 
+                height="450" 
+                src="https://www.youtube.com/embed/BKCln3dZ8C8?rel=0&modestbranding=1" 
+                title="BM INSIGHTS Course Video" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="materials-section">
+            <h3 data-en="Course Materials" data-ti="ናይ ትምህርቲ ንዋት">
+                Course Materials
+            </h3>
+            
+            <a href="content.pdf" class="download-btn" 
+               data-en="📄 Download PDF Guide" 
+               data-ti="📄 ፒዲኤፍ መምርሒ ኣውርድ">
+               📄 Download PDF Guide
+            </a>
+
+            <a href="certificate.html" class="download-btn" style="background: #f1c40f; color: #1a1a2e; margin-left: 10px;"
+               data-en="🏆 Claim Your Certificate"
+               data-ti="🏆 ምስክር ወረቐትካ ውሰድ">
+               🏆 Claim Your Certificate
+            </a>
+        </div>
+
+        <div class="feedback-cta-section">
+            <h3 data-en="Finished the course? Let us know what you think!" 
+                data-ti="ነዚ ኮርስ ወዲእኩሞዶ? ርእይቶኹም ኣካፍሉና!">
+                Finished the course? Let us know what you think!
+            </h3>
+            
+            <a href="feedback.html" class="feedback-link-btn"
+               data-en="⭐ Leave a Review"
+               data-ti="⭐ ርእይቶ ሃብ">
+               ⭐ Leave a Review
+            </a>
+        </div>
+    </section>
+
+    <div class="floating-whatsapp" onclick="contactSupport()">💬</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
