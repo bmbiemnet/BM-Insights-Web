@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BM INSIGHTS | Our Courses</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <img src="profile.png" alt="Logo" class="brand-photo glowing-logo">
+            <div class="logo-text">BM INSIGHTS <span class="tigrinya-text">(ብእምነት)</span></div>
+        </div>
+        
+        <div class="nav-links">
+            <a href="index.html" data-en="Home" data-ti="ገዛ">Home</a>
+            <a href="courses.html" class="active" data-en="Our Courses" data-ti="ትምህርትታትና">Our Courses</a>
+        </div>
+
+        <select id="lang-selector" class="interactive-btn-secondary" onchange="changeLanguage()">
+         <option value="en">🌐 English</option>
+         <option value="ti">🇪🇷 ትግርኛ</option>
+        </select>
+    </nav>
+
+    <section class="courses-page">
+        <h2 class="section-title glowing-text">
+            <span data-en="Our Courses" data-ti="ትምህርትታትና">Our Courses</span>
+            <div class="title-underline"></div>
+        </h2>
+
+        <div class="course-grid">
+            
+            <div class="premium-course-card">
+                <div class="course-thumbnail bg-gradient-1">
+                    <div class="price-tag">$29</div>
+                    <div class="play-button-wrapper">
+                        <div class="play-icon">▶</div>
+                    </div>
+                </div>
+                
+                <div class="course-info">
+                    <h3 data-en="YouTube Content Creation Mastery" data-ti="ናይ ዩቱብ ትሕዝቶ ምድላው ክእለት">YouTube Content Creation Mastery</h3>
+                    <p data-en="Learn to create, edit and grow a YouTube channel from scratch. A comprehensive guide for aspiring creators." data-ti="ካብ ባዶ ጀሚርኩም ናይ ዩቱብ ቻነል ምድላውን ምዕባይን ተምሃሩ። ንጀመርቲ ዝኸውን ሙሉእ መምርሒ።">Learn to create, edit and grow a YouTube channel from scratch. A comprehensive guide for aspiring creators.</p>
+                    
+                    <div class="card-actions">
+                        <a href="course-detail.html" class="learn-more-link" data-en="Learn More →" data-ti="ተወሳኺ ኣንብብ →">Learn More →</a>
+                        <button class="btn-primary-glowing small-buy-btn" onclick="window.location.href='course-detail.html'" data-en="Buy Now" data-ti="ሕጂ ግዛእ">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="premium-course-card">
+                <div class="course-thumbnail bg-gradient-2">
+                    <div class="price-tag">$19</div>
+                    <div class="play-button-wrapper">
+                        <div class="play-icon">▶</div>
+                    </div>
+                </div>
+                
+                <div class="course-info">
+                    <h3 data-en="Digital Marketing Fundamentals" data-ti="መሰረታዊ ፍልጠት ዲጂታል ማርኬቲንግ">Digital Marketing Fundamentals</h3>
+                    <p data-en="Master social media marketing and grow your online presence. Perfect for small business owners and freelancers." data-ti="ኣብ ማሕበራዊ ሚድያ ዕዳጋ ብምክያድ ኦንላይን ንግድኹም ኣዕብዩ። ንነኣሽቱ ትካላት ዝምችእ።">Master social media marketing and grow your online presence. Perfect for small business owners and freelancers.</p>
+                    
+                    <div class="card-actions">
+                        <a href="course-detail.html" class="learn-more-link" data-en="Learn More →" data-ti="ተወሳኺ ኣንብብ →">Learn More →</a>
+                        <button class="btn-primary-glowing small-buy-btn" onclick="window.location.href='course-detail.html'" data-en="Buy Now" data-ti="ሕጂ ግዛእ">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="floating-whatsapp" onclick="contactSupport()">💬</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

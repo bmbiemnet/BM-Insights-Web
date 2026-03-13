@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BM INSIGHTS | Course Feedback</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <img src="profile.png" alt="Logo" class="brand-photo glowing-logo">
+            <div class="logo-text">BM INSIGHTS <span class="tigrinya-text">(ብእምነት)</span></div>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" data-en="Home" data-ti="ገዛ">Home</a>
+            <a href="courses.html" data-en="Our Courses" data-ti="ትምህርትታትና">Our Courses</a>
+        </div>
+        <select id="lang-selector" class="interactive-btn-secondary" onchange="changeLanguage()">
+            <option value="en">🌐 English</option>
+            <option value="ti">🇪🇷 ትግርኛ</option>
+        </select>
+    </nav>
+
+    <section class="feedback-container">
+        <h1 class="glowing-text" 
+            data-en="We Value Your Feedback!" 
+            data-ti="ርእይቶኹም ኣገዳሲ እዩ!">
+            We Value Your Feedback!
+        </h1>
+        <p data-en="How was the YouTube Content Creation Mastery course?" 
+           data-ti="ኮርስ ናይ ዩቱብ ትሕዝቶ ምድላው ክእለት ከመይ ነይሩ?">
+           How was the YouTube Content Creation Mastery course?
+        </p>
+
+        <div class="feedback-card">
+            <label data-en="Your Name:" data-ti="ስምኩም:">Your Name:</label>
+            <input type="text" id="studentName" placeholder="Bemnet..." class="feedback-input">
+            
+            <label data-en="Course Rating:" data-ti="ደረጃ ኮርስ:">Course Rating:</label>
+            
+            <div class="star-rating-container">
+                <input type="radio" id="star5" name="rating" value="5" checked>
+                <label for="star5" title="5 stars">★</label>
+                
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4" title="4 stars">★</label>
+                
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3" title="3 stars">★</label>
+                
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2" title="2 stars">★</label>
+                
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1" title="1 star">★</label>
+            </div>
+
+            <label data-en="Your Review:" data-ti="ርእይቶኹም:">Your Review:</label>
+            <textarea id="studentReview" rows="5" placeholder="Tell us what you loved or what we can improve..." class="feedback-input"></textarea>
+
+            <button onclick="submitFeedback()" class="submit-feedback-btn" 
+                data-en="Submit Feedback" 
+                data-ti="ርእይቶ ስደድ">
+                Submit Feedback
+            </button>
+        </div>
+    </section>
+
+    <div class="floating-whatsapp" onclick="contactSupport()">💬</div>
+
+    <script src="script.js"></script>
+    <script>
+        const savedName = localStorage.getItem('bm_student_name');
+        if (savedName) {
+            document.getElementById('studentName').value = savedName;
+        }
+    </script>
+</body>
+</html>

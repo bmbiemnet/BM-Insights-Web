@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BM INSIGHTS | Course Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <img src="profile.png" alt="Logo" class="brand-photo glowing-logo">
+            <div class="logo-text">BM INSIGHTS <span class="tigrinya-text">(ብእምነት)</span></div>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" data-en="Home" data-ti="ገዛ">Home</a>
+            <a href="courses.html" class="active" data-en="Our Courses" data-ti="ትምህርትታትና">Our Courses</a>
+        </div>
+        <select id="lang-selector" class="interactive-btn-secondary" onchange="changeLanguage()">
+            <option value="en">🌐 English</option>
+            <option value="ti">🇪🇷 ትግርኛ</option>
+        </select>
+    </nav>
+
+    <section class="course-detail-container">
+        <div class="course-main-content">
+            <div class="video-player-wrapper glowing-photo">
+                <div class="play-button-large">▶</div>
+                <p style="position: absolute; bottom: 20px; left: 20px; color: white;" data-en="Free Preview" data-ti="ነጻ ቅድመ-ርእየት">Free Preview</p>
+            </div>
+
+            <h1 class="course-detail-title glowing-text" data-en="YouTube Content Creation Mastery" data-ti="ናይ ዩቱብ ትሕዝቶ ምድላው ክእለት">YouTube Content Creation Mastery</h1>
+            <p class="course-detail-description" data-en="Learn how to script, record, and edit high-quality videos." data-ti="ኣብ ዩቱብ ብኸመይ ቪድዮ ከም እትቐርጹን ከም እተዳለዉን ተምሃሩ።">Learn how to script, record, and edit high-quality videos.</p>
+            
+            <h2 class="section-subtitle" data-en="What you will learn" data-ti="እንታይ ክትምሃሩ ኢኹም">What you will learn</h2>
+            <ul class="learning-checklist">
+                <li>✅ <span data-en="How to find a profitable niche" data-ti="ኣብ ዘዋጽእ ዓውዲ ከመይ ጌርካ ትኣቱ">How to find a profitable niche</span></li>
+                <li>✅ <span data-en="Setting up your studio on a budget" data-ti="ብውሑድ ወጻኢ ስቱድዮ ምድላው">Setting up your studio on a budget</span></li>
+                <li>✅ <span data-en="Basic video editing techniques" data-ti="መሰረታዊ ናይ ቪድዮ ምድላው ጥበብ">Basic video editing techniques</span></li>
+            </ul>
+        </div>
+
+        <div class="course-sidebar">
+            <div class="checkout-card">
+                <div class="checkout-price">$29.00</div>
+                
+                <div id="paypal-button-container"></div>
+
+                <div class="contact-divider">
+                    <p data-en="Don't have PayPal?" data-ti="ፔይፓል የብልኩምን?">Don't have PayPal?</p>
+                    <button class="whatsapp-btn-inline" onclick="contactSupport()">
+                        💬 <span data-en="Message on WhatsApp" data-ti="ብዋትሳፕ ተወከሱና">Message on WhatsApp</span>
+                    </button>
+                </div>
+
+                <ul class="course-features-list">
+                    <li data-en="⏱️ 5 Hours of video" data-ti="⏱️ 5 ሰዓታት ቪድዮ">⏱️ 5 Hours of video</li>
+                    <li data-en="🏆 Certificate" data-ti="🏆 ናይ ምስክር ወረቐት">🏆 Certificate</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="floating-whatsapp" onclick="contactSupport()">💬</div>
+
+    <script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script>
+    <script src="script.js"></script>
+</body>
+</html>
